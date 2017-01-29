@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChangAn University Software Club resources</title>
+    <meta name="description" content="">
+  <meta name="keywords" content="ChangAn University Software Club InnerPush">
+    <meta name="author" content="ChenWenKe">
+
+<!-- Le styles -->
+  <!--[if lt IE 9]><script type="text/javascript">window.location.href="ienotice.html";</script><![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/extra.min.css" rel="stylesheet">
+    <link href="css/pnotify.custom.min.css" rel="stylesheet">
+    <!-- Le javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="js/pnotify.custom.min.js"></script>
+
+    <link href="css/setting.css" rel="stylesheet">
+    <script src="js/setting_common.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $("#navbar>li:nth-child(6)").addClass("active");
+    var $window = $(window);
+    if($window.width() >= 768) $('.bs-docs-sidenav').affix({
+        offset: {
+            top: function () { return $window.width() <= 980 ? 290 : 210 }
+            , bottom: 270
+        }
+    });
+    $("span[data-toggle=popover]")
+          .popover()
+          .click(function(e) {
+            e.preventDefault()
+          });
+    
+    $('#submit').click(function(e) {
+      $.post("?z=codepool-ajax_submit", {verify:$('#verify').val(), tag:$('#tag').val(), code:$('#code').val()} )
+    
+    
+    });
+   
+      });
+  function fakesubmit() {return false;}
+  </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <!-- Docs master nav -->
+    <header class="navbar navbar-static-top bs-docs-nav navbar-inverse" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="navbar">
+              <li class="">
+                   <a href="../../index.html"><span class="glyphicon glyphicon-home"></span></a>
+              </li>
+                    <li class="dropdown">
+          <a class="dropdown-toggle" data-hover="dropdown" data-delay="0" href="#"><span class="glyphicon glyphicon-thumbs-up"></span> 我们</a>
+          <ul class="dropdown-menu" role="menu" id="we-menu">
+                  <li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> 关于我们</a></li>                    <li><a href="#"><span class="glyphicon glyphicon-leaf"></span> Idea+Tch</a></li>                    <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> 登陆/注册</a></li>                 </ul>
+              </li>
+                       <li class="">
+                <a href="photoShow.html"><span class="glyphicon glyphicon-camera"></span> Photos秀</a>
+              </li>              <li class="">
+                <a href="articles.html"><span class="glyphicon glyphicon-globe"></span> 文章</a>
+              </li>              <li class="">
+                   <a href="whereToGo.html"></span>浪傲考场</a>
+              </li>       <li class="">
+                <a href="innerPush.html"><span class="glyphicon glyphicon-fire"></span> 内推中心</a>
+              </li>              <li class="">
+                <a href="resources.html"><span class="glyphicon glyphicon-cloud-upload"></span>资源下载</a>
+              </li>              <li class="">
+                <a href="talkingBoard.html"><span class="glyphicon glyphicon-comment"></span>讨论板</a>
+              </li>              <li class="">
+                 <a href="personal.html"><span class="glyphicon glyphicon-user"></span> Blog</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="wishesWall/WishesWall.html" class="navbar-brand"><span class="glyphicon glyphicon-tasks"></span> 许愿墙</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+<!-- Subhead
+================================================== -->
+<header class="bs-docs-header" id="overview">
+  <div class="container">
+    <h1>内推中心</h1>
+    <p class="lead">&nbsp; &nbsp; &nbsp; InnerPush Center</p>
+    <div id="carbonads-container"></div>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 bs-docs-sidebar">
+        <ul class="nav bs-docs-sidenav">
+          <li class="active" id="reFresh0"><a href="javascript:reFresh(0);"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 内推列表</a></li>
+          <li id="reFresh1" class="disabled"><a><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 简历范本</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-xs-12 col-sm-9">
+      	<section>
+		<div class="page-header" id="header1">
+            <h1>内推列表</h1>
+        </div>
+        <div class="page-header hide" id="header2">
+        	<blockquote><p id="header-title"></p></blockquote>
+        	<div class="btn-group">
+					<a onClick="reFresh(now_page)" title="返回" class="btn btn-add btn-tool btn-default"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
+					<a onClick="load_contestants()" title="刷新" class="btn btn-edit btn-tool btn-default"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></a>
+			</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12"><div class="alert alert-success"><strong>[提示]</strong> 想得到学姐学长的鼎力内推吗？请先 <a href="/login.php" target="_blank">登录本站</a> 后刷新本页面。还没有账号？快来 <a href="/register.php" target="_blank">注册</a> 一个呗。<a class="close" data-dismiss="alert" href="#">&times;</a></div></div>            <div id="table-content-index" class="col-xs-12 table-content">
+  				<table id="data-table" class="data-table table table-bordered table-striped table-condensed table-hover"><thead><tr class="align-center"><th class="sorter-false" width="20%">公司</th><th class="sorter-false" width="50%">职位描述</th><th class="sorter-false" width="10%">学长/学姐</th><th width="20%" class="sorter-false">邮箱</th></tr></thead><tbody></tbody></table>
+            </div>
+            <!-- pager -->
+            <nav id="pager" class="col-xs-12 text-center" style="margin-top:0px">
+              	<ul class="pagination">
+                    <li class="first"><a href="javascript:void(0)"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a></li>
+                    <li class="prev"><a href="javascript:void(0)"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a></li>
+                    <li><span class="pagedisplay"></span></li>
+                    <li class="next"><a href="javascript:void(0)"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a></li>
+                    <li class="last"><a href="javascript:void(0)"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a></li>
+                    <div class="col-xs-4 col-sm-4" style="margin-left:-10px"><select class="pagesize inline form-control">
+                        <option selected="selected" value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                	</select></div>
+                </ul>
+            </nav>
+        </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="alert"></div>
+  <div class="modal fade" id="activity-modal" data-cache='false' data-backdrop="true" data-keyboard="true" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true"><div class="modal-dialog" style="width:800px"><div class="modal-content">
+    <div class="modal-header">
+    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    	<h4 id="activity-modal-title" class="modal-title">活动中心</h4>
+  	</div>
+    <form class="form-horizontal" id="activity-form" method="post" action="" enctype="multipart/form-data">
+  	<div class="modal-body" id="activity-modal-body"></div>
+    </form>
+  	<div class="modal-footer">
+    	<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+    	<button id="activity-btn-submit" type="submit" class="btn btn-primary">提交</button>
+  	</div>
+  </div></div></div>
+
+
+<!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10 col-sm-5 text-right"><a href="http://www.cnblogs.com/acm1314/"><img src="photos/logo.jpg"></a></div>
+          <div class="col-xs-12 col-sm-6 text-left">
+            <p>Designed  Just for learning by ChenWenKe</p>
+            <p>Code licensed under <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU GPL v3</a>, source code hosting at <a href="#" target="_blank">GitHub</a>.</p>
+            <ul class="footer-links">
+              <li><a href="http://www.cnblogs.com/acm1314/">Blog</a></li>
+              <li class="muted">·</li>
+              <li><a href="http://weibo.com/p/1005055382871687?is_all=1">Weibo</a></li>
+              <li class="muted">·</li>
+              <li><a href="https://github.com/CaoTanXiaoKe">GitHub</a></li>
+              <li class="muted">·</li>
+              <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2568333286&site=qq&menu=yes">QQ</a></li>
+              <li class="muted">·</li>
+               <li><a href="mailto:2568333286@qq.com" class="hire"><i class="icon-envelope"></i> @Email Me</a></li>
+              <li class="muted">·</li>
+              <a href="thanks.html">鸣谢</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+</script></html>

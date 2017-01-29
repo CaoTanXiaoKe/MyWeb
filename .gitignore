@@ -1,0 +1,6 @@
+# the phpadmin package
+/phpmyadmin
+
+# the PdfBooks/ dir
+/phptest/Test/PdfBooks/
+

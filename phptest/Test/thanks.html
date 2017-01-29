@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChangAn University Software Club about me</title>
+    <meta name="description" content="">
+  <meta name="keywords" content="ChangAn University Software Club ">
+    <meta name="author" content="ChenWenKe">
+
+<!-- Le styles -->
+  <!--[if lt IE 9]><script type="text/javascript">window.location.href="ienotice.html";</script><![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/extra.min.css" rel="stylesheet">
+    <link href="css/pnotify.custom.min.css" rel="stylesheet">
+
+    <!-- the articls-->
+    <link rel="stylesheet" href="thanks/main.css">
+    <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+    <!-- Le javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="js/pnotify.custom.min.js"></script>
+
+    <link href="css/setting.css" rel="stylesheet">
+    <script src="js/setting_common.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $("#navbar>li:nth-child()").addClass("active");
+    var $window = $(window);
+    if($window.width() >= 768) $('.bs-docs-sidenav').affix({
+        offset: {
+            top: function () { return $window.width() <= 980 ? 290 : 210 }
+            , bottom: 270
+        }
+    });
+    $("span[data-toggle=popover]")
+          .popover()
+          .click(function(e) {
+            e.preventDefault()
+          });
+    
+    $('#submit').click(function(e) {
+      $.post("?z=codepool-ajax_submit", {verify:$('#verify').val(), tag:$('#tag').val(), code:$('#code').val()} )
+    
+    
+    });
+   
+      });
+  function fakesubmit() {return false;}
+  </script>
+
+<!-- 文章排版  -->
+<style type="text/css">
+#lin{
+ margin:0 auto;
+ width:500px;
+ text-indent:2em;
+ font:Arial;
+ font-size:15px;}
+ 
+p{
+ line-height:24px;
+}
+</style>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <!-- Docs master nav -->
+    <header class="navbar navbar-static-top bs-docs-nav navbar-inverse" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="navbar">
+              <li class="">
+                  <a href="../../index.html"><span class="glyphicon glyphicon-home"></span></a>
+              </li>
+                    <li class="dropdown">
+          <a class="dropdown-toggle" data-hover="dropdown" data-delay="0" href="#"><span class="glyphicon glyphicon-thumbs-up"></span> 我们</a>
+          <ul class="dropdown-menu" role="menu" id="we-menu">
+                  <li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> 关于我们</a></li>                    <li><a href="#"><span class="glyphicon glyphicon-leaf"></span> Idea+Tch</a></li>                    <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> 登陆/注册</a></li>                </ul>
+              </li>
+                       <li class="">
+                <a href="photoShow.html"><span class="glyphicon glyphicon-camera"></span>Photos秀</a>
+              </li>              <li class="">
+                 <a href="articles.html"><span class="glyphicon glyphicon-globe"></span> 文章</a>
+              </li>              <li class="">
+                <a href="whereToGo.html"></span>浪傲考场</a>
+              </li>       <li class="">
+                <a href="innerPush.html"><span class="glyphicon glyphicon-fire"></span> 内推中心</a>
+              </li>              <li class="">
+                <a href="resources.html"><span class="glyphicon glyphicon-cloud-upload"></span>资源下载</a>
+              </li>              <li class="">
+                <a href="talkingBoard.html"><span class="glyphicon glyphicon-comment"></span>讨论板</a>
+              </li>              <li class="">
+                <a href="personal.html"><span class="glyphicon glyphicon-user"></span> Blog</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="wishesWall/WishesWall.html" class="navbar-brand"><span class="glyphicon glyphicon-tasks"></span> 许愿墙</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+<!-- Subhead
+================================================== -->
+<div class="page">
+    
+</header>
+
+    <header class="post-header">
+    <h1>Thanks</h1>
+    <br />
+    <p class="post-meta">Posted on September 7, 2016  (陈闻恪)</p>
+    
+    <p class="post-meta">Description: Thank them deeply</p>
+    
+
+    
+    <br />
+    </header>
+
+    <p>首先感谢你光顾我的网站， 以及浏览这篇鸣谢信。</p>
+
+<p>感谢 我的姐姐， 我的小外甥， 以及室友石灿， 为该网站提供了许多精美的照片。 同样要感谢这些图片中涉及的所有人物， 允许我把你们的靓照贴在这里， 让人们围观。 （由于照片中出现的人物太多， 如果有谁出于某种原因， 不允许我把你们的照片贴在这里， 请发邮件给我   2568333286@qq.com .) 如果有哪位小伙伴， 对该网站有什么想法和建议， 也十分诚恳的请求你们发邮件给我。</p>
+
+<p>感谢金权学长和李韡学长为学弟学妹们提供了大量的学习资料， 从这些资料上也可以看出， 他们为了整理这些学习资料， 一定付出了大量宝贵的时间与精力。（整理这么多资料，至少需要推掉几十场和MM的约会吧）。</p>
+
+<p>感谢郏乘帆学长写的文章， 感谢所有为本站提出建议的人。 对我来说， 你们的每一条建议都十分珍贵， 也许限于时间， 限于我当前的技术， 有些小伙伴提出的精妙建议， 我暂时还无法实现。 但是我保证你们的每一条建议， 我都会再三思索， 反复考量。 感谢你们 —- 我最挚爱的人们。</p>
+
+<p>由于该网站的代码大多是在课余时间编写的， 所以室友们难免在清晨或深夜被 "啪啪" 的键盘声吵醒， 也许恰好这个时候他们正在做着十分微妙的美梦（You Know， 我室友大多是单身）。 感谢他们对我无限的包容。</p>
+
+<p>感谢那些宽容我， 包容我的人们。 尤其感谢14级软件一班，软件二班的全体童靴们， 真诚的感谢你们， 感谢你们对我种种过错的容忍。  
+</p>
+
+<p>感谢郭伟每个周末陪我打网球， 感谢 吴子文， 孙嘉乐, 宋恩杰， 曾首元， 石灿， 穆蕾， 王冲， 石逢钊， 王槐拯学长， 马小勋学长， 万继龙学长， 翁世杰学长在学习和做事方面给我的帮助和指导。 感谢那些曾经帮助和正在帮助我的那些学长学姐们。 感谢ACM协会的所有小伙伴们， 认识你们， 我很值得。（ACM协会是一个十分“可怕”的协会， 聪明人实在太多，这是个智商碾压无处不在的地方）。 感谢我的那些朋友们， “陪伴是最长情的告白”， 是你们一直陪伴着我和见证着我的成长。</p>
+<p>感谢我的那些老师们， 温文尔雅的张昌利老师， 果断干练的樊海玮老师， 博学幽默的袁绍欣老师，严谨深刻的李鹏老师， 还有呆萌可爱的小朱老师， 以及其他耐心教导我们的老师。</p>
+<p>最后， 要特别感谢一下我的一位小伙伴 —- 王海曼童鞋， 谢谢你陪我上自习（让我错失了数十次和MM搭讪的机会）， 谢谢你帮助我设计本站的 logo。 还有，海曼， 你欠我的钱该还了吧 ~_~      </p>
+<p>再次感谢正在浏览本站的你， 你的支持和鼓励就是我最大的动力。</p>
+
+
+
+<br />
+<br />
+<hr />
+<br />
+<p style="position:absolute;right:20%"> ---- 长安大学 14级 软件工程 （壹班） 陈闻恪</p>
+</div>
+
+<!-- Footer
+================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10 col-sm-5 text-right"><a href="http://www.cnblogs.com/acm1314/"><img src="photos/logo.jpg"></a></div>
+          <div class="col-xs-12 col-sm-6 text-left">
+            <p>Designed  Just for learning by ChenWenKe</p>
+            <p>Code licensed under <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU GPL v3</a>, source code hosting at <a href="#" target="_blank">GitHub</a>.</p>
+            <ul class="footer-links">
+              <li><a href="http://www.cnblogs.com/acm1314/">Blog</a></li>
+              <li class="muted">·</li>
+              <li><a href="http://weibo.com/p/1005055382871687?is_all=1">Weibo</a></li>
+              <li class="muted">·</li>
+              <li><a href="https://github.com/CaoTanXiaoKe">GitHub</a></li>
+              <li class="muted">·</li>
+              <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2568333286&site=qq&menu=yes">QQ</a></li>
+              <li class="muted">·</li>
+               <li><a href="mailto:2568333286@qq.com" class="hire"><i class="icon-envelope"></i> @Email Me</a></li>
+              <li class="muted">·</li>
+              <a href="thanks.html">鸣谢</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+	</script></html>

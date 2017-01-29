@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChangAn University Software Club about me</title>
+    <meta name="description" content="">
+  <meta name="keywords" content="ChangAn University Software Club ">
+    <meta name="author" content="ChenWenKe">
+
+<!-- Le styles -->
+  <!--[if lt IE 9]><script type="text/javascript">window.location.href="ienotice.html";</script><![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/extra.min.css" rel="stylesheet">
+    <link href="css/pnotify.custom.min.css" rel="stylesheet">
+    <!-- Le javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="js/pnotify.custom.min.js"></script>
+    <link href="css/setting.css" rel="stylesheet">
+
+    <!--  album's scripe -->
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="album/css/windy.css" />
+    <link rel="stylesheet" type="text/css" href="album/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="album/css/style1.css" />
+    <script type="text/javascript" src="album/js/modernizr.custom.79639.js"></script>
+    <noscript><link rel="stylesheet" type="text/css" href="album/css/noJS.css" /></noscript>
+
+
+
+    <script src="js/setting_common.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $("#navbar>li:nth-child(3)").addClass("active");
+    var $window = $(window);
+    if($window.width() >= 768) $('.bs-docs-sidenav').affix({
+        offset: {
+            top: function () { return $window.width() <= 980 ? 290 : 210 }
+            , bottom: 270
+        }
+    });
+    $("span[data-toggle=popover]")
+          .popover()
+          .click(function(e) {
+            e.preventDefault()
+          });
+    
+    $('#submit').click(function(e) {
+      $.post("?z=codepool-ajax_submit", {verify:$('#verify').val(), tag:$('#tag').val(), code:$('#code').val()} )
+    
+    
+    });
+   
+      });
+  function fakesubmit() {return false;}
+  </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <!-- Docs master nav -->
+    <header class="navbar navbar-static-top bs-docs-nav navbar-inverse" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="navbar">
+              <li class="">
+                  <a href="../../index.html"><span class="glyphicon glyphicon-home"></span></a>
+              </li>
+                    <li class="dropdown">
+          <a class="dropdown-toggle" data-hover="dropdown" data-delay="0" href="#"><span class="glyphicon glyphicon-thumbs-up"></span> 我们</a>
+          <ul class="dropdown-menu" role="menu" id="we-menu">
+                  <li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> 关于我们</a></li>                    <li><a href="#"><span class="glyphicon glyphicon-leaf"></span> Idea+Tch</a></li>                    <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> 登陆/注册</a></li>                </ul>
+              </li>
+                       <li class="">
+                <a href="photoShow.html"><span class="glyphicon glyphicon-camera"></span>Photos秀</a>
+              </li>              <li class="">
+                 <a href="articles.html"><span class="glyphicon glyphicon-globe"></span> 文章</a>
+              </li>              <li class="">
+                <a href="whereToGo.html"></span>浪傲考场</a>
+              </li>       <li class="">
+                <a href="innerPush.html"><span class="glyphicon glyphicon-fire"></span> 内推中心</a>
+              </li>              <li class="">
+                <a href="resources.html"><span class="glyphicon glyphicon-cloud-upload"></span>资源下载</a>
+              </li>              <li class="">
+                <a href="talkingBoard.html"><span class="glyphicon glyphicon-comment"></span>讨论板</a>
+              </li>              <li class="">
+                <a href="personal.html"><span class="glyphicon glyphicon-user"></span> Blog</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="wishesWall/WishesWall.html" class="navbar-brand"><span class="glyphicon glyphicon-tasks"></span> 许愿墙</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+<!-- Subhead
+================================================== -->
+
+  <div class="container">
+
+      <div style="text-align:center;clear:both">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+      <section class="main">
+
+        <div class="windy-demo">
+          <ul id="wi-el" class="wi-container">
+            <li><img src="album/images/demo1/50.jpg" alt="image1"/><br /><h4>终南山登高</h4><p>请君暂上凌烟阁，若个书生万户侯。</p></li>
+            <li><img src="album/images/demo1/51.jpg" alt="image2"/><br /><h4>南木北草 </h4><p>亿万年鬼斧神工，南北由此分！</p></li>
+            <li><img src="album/images/demo1/52.jpg" alt="image3"/><br /><h4>无题</h4><p>纯白色的世界里的落寂，忧郁但不阴郁。</p></li>
+            <li><img src="album/images/demo1/50.jpg" alt="image4"/><br /><h4>哪堪凭栏？</h4><p>把吴钩看了，栏干拍遍，无人会！</p></li>
+            <li><img src="album/images/demo1/54.jpg" alt="image5"/><br /><h4>无题</h4><p></p></li>
+            <li><img src="album/images/demo1/55.jpg" alt="image6"/><br /><h4>中国南北分界线</h4><p></p></li>
+            <li><img src="album/images/demo1/56.jpg" alt="image7"/><br /><h4>逝者如斯夫！</h4><p>悟已往之不谏，知来者犹可追。</p></li>
+            <li><img src="album/images/demo1/57.jpg" alt="image8"/><br /><h4>逝者如斯夫！</h4><p>悟已往之不谏，知来者犹可追。</p></li>
+            <li><img src="album/images/demo1/58.jpg" alt="image9"/><br /><h4>烤红薯</h4><p>在终南山半山腰的雪地里烤的红薯，味道好极了。</p></li>
+            <li><img src="album/images/demo1/59.jpg" alt="image10"/><br /><h4>黄河长江分水岭</h4><p></p></li>
+            <li><img src="album/images/demo1/60.jpg" alt="image11"/><br /><h4>秦楚古道</h4><p>千百年秦楚古道，浩荡英雄气。</p></li>
+            <li><img src="album/images/demo1/61.jpg" alt="image12"/><br /><h4>无题</h4><p></p></li>
+            <li><img src="album/images/demo1/62.jpg" alt="image13"/><br /><h4>无题</h4><p></p></li>
+            <li><img src="album/images/demo1/63.jpg" alt="image14"/><br /><h4>无题</h4><p></p></li>
+            <li><img src="album/images/demo1/64.jpg" alt="image15"/><br /><h4>秦楚古道</h4><p></p></li>
+            <li><img src="album/images/demo1/65.jpg" alt="image16"/><br /><h4>路真的很滑！！！</h4><p></p></li>
+            <li><img src="album/images/demo1/66.jpg" alt="image17"/><br /><h4></h4><p>哈哈， 在山腰的平地上，一个十分可爱的小姑娘堆了一个十分可爱的雪人。</p></li>
+            <li><img src="album/images/demo1/60.jpg" alt="image18"/><br /><h4></h4><p></p></li>
+            <li><img src="album/images/demo1/19.jpg" alt="image19"/><br /><h4>曲江池</h4><p>亭台楼阁，池馆水榭。夜幕中的曲江池， 尽显帝都西安的风韵与浪漫。</p></li>
+            <li><img src="album/images/demo1/20.jpg" alt="image20"/><br /><h4>华山日出</h4><p>太阳渐渐升起， 东方的天空也呈现出了绚丽的朝霞， 登山的艰辛， 一夜的等待， 在这一刻得到了回报。</p></li>
+            <li><img src="album/images/demo1/1.jpg" alt="image1"/><br /><h4>我家小外甥</h4><p>九个月大， 虽然还不会走， 不会爬， 但是上镜技术一流。每当给他拍照时， 就强势卖萌（虽然真的也很萌）。  </p></li>
+            <li><img src="album/images/demo1/2.jpg" alt="image2"/><br /><h4>华山日出  </h4><p>经过漫长的等待， 太阳忽然从东方隐现的那种美丽， 不仅仅是浪漫与诗意， 更是满足和振奋。</p></li>
+            <li><img src="album/images/demo1/3.jpg" alt="image3"/><br /><h4>我家小外甥</h4><p>小家伙， 一百天的时候在淮阳照相馆里拍的  百天照.</p></li>
+            <li><img src="album/images/demo1/4.jpg" alt="image4"/><br /><h4>华山日出</h4><p>太阳渐渐升起， 东方的天空也呈现出了绚丽的朝霞， 登山的艰辛， 一夜的等待， 在这一刻得到了回报。 </p></li>
+            <li><img src="album/images/demo1/5.jpg" alt="image5"/><br /><h4>紫云楼</h4><p>大唐芙蓉园 ---- （紫云楼） 气势磅礴， 古韵古香</p></li>
+            <li><img src="album/images/demo1/6.jpg" alt="image6"/><br /><h4>华山之颠的男子</h4><p>石灿， 189cm, 单身， 14级软件工程 (壹) 班   15号楼118寝室， 博学儒雅， 风流倜傥，英姿飒爽。<br />邮箱： 1873623632@qq.com</p></li>
+            <li><img src="album/images/demo1/7.jpg" alt="image7"/><br /><h4>王座上的男子</h4><p>“三千年历史不外乎  功名利禄； 九万里悟道终归是  诗酒田园”。 血雨中轮转千年的“铁王座”， 我今一坐笑之。 ---- 石灿</p></li>
+            <li><img src="album/images/demo1/8.jpg" alt="image8"/><br /><h4>我家小外甥</h4><p>小家伙， 一百天的时候在淮阳照相馆里拍的  百天照.</p></li>
+            <li><img src="album/images/demo1/9.jpg" alt="image9"/><br /><h4>华山日出</h4><p>太阳渐渐升起， 东方的天空也呈现出了绚丽的朝霞， 登山的艰辛， 一夜的等待， 在这一刻得到了回报。</p></li>
+            <li><img src="album/images/demo1/10.jpg" alt="image10"/><br /><h4>华山松</h4><p>千百年风雨洗礼， 我站在这里只为等你。</p></li>
+            <li><img src="album/images/demo1/11.jpg" alt="image11"/><br /><h4>华山 </h4><p>"只有天在上，更无山与齐."   真正的“巍峨”， 无需注解！</p></li>
+            <li><img src="album/images/demo1/12.jpg" alt="image12"/><br /><h4>钟楼 </h4><p>雕梁画栋， 金顶闪烁， 夜色中的钟楼承载着五百多年历史的厚重， 几千年文化的积淀。 </p></li>
+            <li><img src="album/images/demo1/13.jpg" alt="image13"/><br /><h4>水中悟道</h4><p>宋恩杰， 14级软件 (壹) 班 学委， 15号楼114寝室， 一枚十分帅气， 十分强势的逗比。 <br />邮箱： 17809287450@qq.com</p></li>
+            <li><img src="album/images/demo1/14.jpg" alt="image14"/><br /><h4>紫云楼</h4><p>大唐芙蓉园 ---- （紫云楼）气势磅礴， 古韵古香</p></li>
+            <li><img src="album/images/demo1/15.jpg" alt="image15"/><br /><h4>大唐芙蓉园</h4><p>廊腰缦回， 亭台楼阁， 千年古韵， 这个故事应该叫： 梦回大唐.</p></li>
+            <li><img src="album/images/demo1/16.jpg" alt="image16"/><br /><h4>紫云楼</h4><p>大唐芙蓉园 ---- （紫云楼）气势磅礴， 古韵古香</p></li>
+            <li><img src="album/images/demo1/17.jpg" alt="image17"/><br /><h4>大唐芙蓉园</h4><p>虹桥飞架， 这里应该是诗意的栖居。</p></li>
+            <li><img src="album/images/demo1/18.jpg" alt="image18"/><br /><h4>大唐芙蓉园</h4><p>哈哈， 我是来偷拍美女的。 </p></li>
+            <li><img src="album/images/demo1/19.jpg" alt="image19"/><br /><h4>曲江池</h4><p>亭台楼阁，池馆水榭。夜幕中的曲江池， 尽显帝都西安的风韵与浪漫。</p></li>
+            <li><img src="album/images/demo1/20.jpg" alt="image20"/><br /><h4>华山日出</h4><p>太阳渐渐升起， 东方的天空也呈现出了绚丽的朝霞， 登山的艰辛， 一夜的等待， 在这一刻得到了回报。</p></li>
+            <li><img src="album/images/demo1/1.jpg" alt="image1"/><br /><h4>我家小外甥</h4><p>九个月大， 虽然还不会走， 不会爬， 但是上镜技术一流。每当给他拍照时， 就强势卖萌（虽然真的也很萌）。  </p></li>
+            <li><img src="album/images/demo1/2.jpg" alt="image2"/><br /><h4>华山日出  </h4><p>经过漫长的等待， 太阳忽然从东方隐现的那种美丽， 不仅仅是浪漫与诗意， 更是满足和振奋。</p></li>
+            <li><img src="album/images/demo1/3.jpg" alt="image3"/><br /><br /><h4>我家小外甥</h4><p>小家伙， 一百天的时候在淮阳照相馆里拍的  百天照.</p></li>
+            <li><img src="album/images/demo1/4.jpg" alt="image4"/><br /><h4>华山日出</h4><p>太阳渐渐升起， 东方的天空也呈现出了绚丽的朝霞， 登山的艰辛， 一夜的等待， 在这一刻得到了回报。 </p></li>
+            <li><img src="album/images/demo1/5.jpg" alt="image5"/><br /><h4><紫云楼</h4><p>大唐芙蓉园 ---- （紫云楼） 气势磅礴， 古韵古香</p></li>
+            <li><img src="album/images/demo1/6.jpg" alt="image6"/><br /><h4>华山之颠的男子</h4><p>石灿， 189cm, 单身， 14级软件工程 (壹) 班   15号楼118寝室， 博学儒雅， 风流倜傥，英姿飒爽。<br />邮箱： 1873623632@qq.com</p></li>
+            <li><img src="album/images/demo1/7.jpg" alt="image7"/><br /><h4>王座上的男子</h4><p>“三千年历史不外乎  功名利禄； 华山松悟道终归是  诗酒田园”。 血雨中轮转千年的“铁王座”， 我今一坐笑之。 ---- 石灿</p></li>
+            <li><img src="album/images/demo1/8.jpg" alt="image8"/><br /><h4>我家小外甥</h4><p>小家伙， 一百天的时候在淮阳照相馆里拍的  百天照.</p></li>
+            <li><img src="album/images/demo1/9.jpg" alt="image9"/><br /><h4>华山日出</h4><p>太阳渐渐升起， 东方的天空也呈现出了绚丽的朝霞， 登山的艰辛， 一夜的等待， 在这一刻得到了回报。</p></li>
+            <li><img src="album/images/demo1/10.jpg" alt="image10"/><br /><h4>华山松</h4><p>千百年风雨洗礼， 我站在这里只为等你。</p></li>
+            <li><img src="album/images/demo1/11.jpg" alt="image11"/><br /><h4>华山 </h4><p>"只有天在上，更无山与齐."   真正的“巍峨”， 无需注解！</p></li>
+            <li><img src="album/images/demo1/12.jpg" alt="image12"/><br /><h4>钟楼 </h4><p>雕梁画栋， 金顶闪烁， 夜色中的钟楼承载着五百多年历史的厚重， 几千年文化的积淀。 </p></li>
+            <li><img src="album/images/demo1/13.jpg" alt="image13"/><br /><h4>水中悟道</h4><p>宋恩杰， 14级软件 (壹) 班 学委， 15号楼114寝室， 一枚十分帅气， 十分强势的逗比。 <br />邮箱： 17809287450@qq.com</p></li>
+            <li><img src="album/images/demo1/14.jpg" alt="image14"/><br /><h4>紫云楼</h4><p>大唐芙蓉园 ---- （紫云楼）气势磅礴， 古韵古香</p></li>
+            <li><img src="album/images/demo1/15.jpg" alt="image15"/><br /><h4>大唐芙蓉园</h4><p>廊腰缦回， 亭台楼阁， 千年古韵， 这个故事应该叫： 梦回大唐.</p></li>
+            <li><img src="album/images/demo1/16.jpg" alt="image16"/><br /><h4>紫云楼</h4><p>大唐芙蓉园 ---- （紫云楼）气势磅礴， 古韵古香</p></li>
+            <li><img src="album/images/demo1/17.jpg" alt="image17"/><br /><h4>大唐芙蓉园</h4><p>虹桥飞架， 这里应该是诗意的栖居。</p></li>
+            <li><img src="album/images/demo1/18.jpg" alt="image18"/><br /><h4>大唐芙蓉园</h4><p>哈哈， 我是来偷拍美女的。 </p></li>
+            <li><img src="album/images/demo1/19.jpg" alt="image19"/><br /><h4>曲江池</h4><p>亭台楼阁，池馆水榭。夜幕中的曲江池， 尽显帝都西安的风韵与浪漫。</p></li>
+            <li><img src="album/images/demo1/20.jpg" alt="image20"/><br /><h4>华山日出</h4><p>太阳渐渐升起， 东方的天空也呈现出了绚丽的朝霞， 登山的艰辛， 一夜的等待， 在这一刻得到了回报。</p></li>
+          </ul>
+          <nav>
+            <span id="nav-prev">prev</span>
+            <span id="nav-next">next</span>
+          </nav>
+        </div>
+        <p class="info"><strong>提示:</strong> 如果想要看连续的效果，用鼠标按住上面的小箭头.</p>
+        
+      </section>
+      
+        </div>
+
+<script type="text/javascript" src="album/js/jquery.js"></script>
+        <script type="text/javascript" src="album/js/jquery.windy.js"></script>
+        <script type="text/javascript"> 
+      $(function() {
+
+        var $el = $( '#wi-el' ),
+          windy = $el.windy(),
+          allownavnext = false,
+          allownavprev = false;
+
+        $( '#nav-prev' ).on( 'mousedown', function( event ) {
+
+          allownavprev = true;
+          navprev();
+        
+        } ).on( 'mouseup mouseleave', function( event ) {
+
+          allownavprev = false;
+        
+        } );
+
+        $( '#nav-next' ).on( 'mousedown', function( event ) {
+
+          allownavnext = true;
+          navnext();
+        
+        } ).on( 'mouseup mouseleave', function( event ) {
+
+          allownavnext = false;
+        
+        } );
+
+        function navnext() {
+          if( allownavnext ) {
+            windy.next();
+            setTimeout( function() {  
+              navnext();
+            }, 150 );
+          }
+        }
+        
+        function navprev() {
+          if( allownavprev ) {
+            windy.prev();
+            setTimeout( function() {  
+              navprev();
+            }, 150 );
+          }
+        }
+
+      });
+    </script>
+
+
+
+
+<!-- Footer
+================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10 col-sm-5 text-right"><a href="http://www.cnblogs.com/acm1314/"><img src="photos/logo.jpg"></a></div>
+          <div class="col-xs-12 col-sm-6 text-left">
+            <p>Designed  Just for learning by ChenWenKe</p>
+            <p>Code licensed under <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU GPL v3</a>, source code hosting at <a href="#" target="_blank">GitHub</a>.</p>
+            <ul class="footer-links">
+              <li><a href="http://www.cnblogs.com/acm1314/">Blog</a></li>
+              <li class="muted">·</li>
+              <li><a href="http://weibo.com/p/1005055382871687?is_all=1">Weibo</a></li>
+              <li class="muted">·</li>
+              <li><a href="https://github.com/CaoTanXiaoKe">GitHub</a></li>
+              <li class="muted">·</li>
+              <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2568333286&site=qq&menu=yes">QQ</a></li>
+              <li class="muted">·</li>
+               <li><a href="mailto:2568333286@qq.com" class="hire"><i class="icon-envelope"></i> @Email Me</a></li>
+              <li class="muted">·</li>
+              <a href="thanks.html">鸣谢</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </script></html>
