@@ -108,7 +108,7 @@
    <br />
    <br />
     <p style="text-align: center;">
-              <a href="http://www.cnblogs.com/acm1314/">Blog</a>
+              <a href="https://caotanxiaoke.github.io/">Blog</a>
               &nbsp; &nbsp;  &nbsp; &nbsp;
              <a href="http://weibo.com/p/1005055382871687?is_all=1">Weibo</a>
           	 &nbsp; &nbsp; &nbsp; &nbsp;
