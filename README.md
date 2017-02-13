@@ -9,4 +9,6 @@
 
 不过，我真挚的朋友，如果您对本站或是本人有什么建议， 还是万分诚恳的期待您告诉我。
 
-[网站地址](http://123.207.54.56/)
+### [网站地址](http://123.207.54.56/)
+
+> Great work need time, focus, patience, hard work and put heart into it. 
